@@ -1,0 +1,37 @@
+You will receive a document and a set of top-level topics from a topic hierarchy. Your task is to identify generalizable topics within the document that can act as top-level topics in the hierarchy. If any relevant topics are missing from the provided set, please add them. Otherwise, output the existing top-level topics as identified in the document.
+
+[Top-level topics]
+{Topics}
+
+[Examples]
+Example 1: Adding "[1] warfare"
+Document:
+coast guard city coast guard city united_states municipality designated commandant united_states_coast_guard application local civilian government honorary designation intended recognize communities special importance coast guard criteria designation coast guard city commandant united_states_coast_guard advise review board application municipal government according coast guard applications expected demonstrate jurisdiction ability meet multi criteria include erection monuments memorials coast guard organization civic celebrations anniversary founding coast guard
+
+Your response:
+[1] warfare
+
+Example 2: Duplicate "[1] geography", returning the existing topic
+Document:
+mary mary light april march american aerial photographer explorer heir company fortune best known aerial circles mile flight photographed unprecedented images south_america africa african photographs later featured book focus africa later years known native michigan philanthropy western michigan university university_of_michigan charities
+
+Your response:
+[1] geography
+
+[Instructions]
+Step 1: Determine topics mentioned in the document.
+- The topic labels must be as GENERALIZABLE as possible. They must not be document-specific.
+- The topics must reflect a SINGLE topic instead of a combination of topics.
+- The new topics must have a level number, a short general label, and a topic description.
+- The topics must be broad enough to accommodate future subtopics.
+Step 2: Perform ONE of the following operations:
+1. If there are already duplicates or relevant topics in the hierarchy, output those topics and stop here.
+2. If the document contains no topic, return "None".
+3. Otherwise, add your topic as a top-level topic. Stop here and output the added topic(s). DO NOT add any additional levels.
+
+
+[Document]
+{Document}
+
+Please ONLY return the relevant or modified topics at the top level in the hierarchy.
+[Your response]

@@ -1,0 +1,11 @@
+﻿metric,CPS,random_mean,random_std,CPS_vs_random_mean
+exact_match_pct,9.5809,7.7002,8.0263,1.8807
+cosine_similarity,0.3746,0.3986,0.0188,-0.024
+bert_score_f1,0.8645,0.8764,0.0136,-0.0119
+jaccard_similarity,0.1021,0.1102,0.0482,-0.0081
+levenshtein_similarity,0.2505,0.2338,0.0463,0.0168
+harmonic_mean_purity_p1,0.376,0.401,0.0301,-0.025
+adjusted_rand_index,0.1866,0.2048,0.0417,-0.0182
+normalized_mutual_info,0.3625,0.3641,0.0217,-0.0017
+topic_coherence_cv,0.4939,0.48,0.0115,0.0139
+topic_alignment_pn,0.3693,0.3826,0.0246,-0.0133

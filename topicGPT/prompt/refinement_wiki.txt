@@ -1,0 +1,40 @@
+You will receive a list of topics that belong to the same level of a topic hierarchy. Your task is to merge topics that are paraphrases or near duplicates of one another. Return "None" if no modification is needed.
+
+Here are some examples:
+[Example 1]
+Topic List:
+[1] military conflicts
+[1] battles and warfare
+
+Your response:
+[1] warfare: military conflicts and battles (military conflicts, battles and warfare)
+
+[Example 2]
+Topic List:
+[1] television programs
+[1] television shows
+
+Your response:
+[1] television: television programs and shows (television programs, television shows)
+
+[Example 3]
+Topic List:
+[1] biology
+[1] earth science
+
+Your response:
+None
+
+[Rules]
+- Each line represents a topic, with a level indicator and a topic label.
+- Perform the following operations as many times as needed:
+    - Merge relevant topics into a single topic.
+    - Do nothing and return "None" if no modification is needed.
+- When merging, the output format should contain a level indicator, the updated label and description, followed by the original topics in parentheses.
+- Only merge topics that are true paraphrases or near duplicates. Do NOT merge topics that are related but distinct.
+
+[Topic List]
+{Topics}
+
+Output the modification or "None" where appropriate. Do not output anything else.
+[Your response]

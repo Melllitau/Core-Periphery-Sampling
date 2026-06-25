@@ -1,0 +1,6 @@
+﻿metric,BERTopic_mean,BERTopic_std,CPS,Random_mean,Random_std
+harmonic_mean_purity_p1,0.6198,0.0061,0.426,0.3567,0.0328
+adjusted_rand_index,0.4465,0.0082,0.2363,0.1464,0.0806
+normalized_mutual_info,0.5911,0.0058,0.3629,0.2764,0.0914
+topic_coherence_cv,0.6536,0.0182,0.5576,0.5293,0.0211
+topic_alignment_pn,0.6055,0.0044,0.3944,0.3166,0.0621
